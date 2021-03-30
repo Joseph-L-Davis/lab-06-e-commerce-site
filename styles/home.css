@@ -1,1 +1,22 @@
 /* add home page styles here */
+body {
+  background-color: bisque;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  font-family: cursive;
+  font-size: 1.5rem;
+}

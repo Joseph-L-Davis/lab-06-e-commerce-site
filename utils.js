@@ -9,7 +9,9 @@ export function createWandLi(wand) {
     pWizard.textContent = wand.wizard;
 
     const image = document.createElement('img');
-    image.src = wands.image;
+    image.src = wand.image;
+    image.width = 200;
+    image.height = 200;
 
     const pLength = document.createElement('p');
     pLength.classList.add('length');
