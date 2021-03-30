@@ -24,7 +24,7 @@ export const wands = [
         image: '../assets/ginny.jpg',
         color: 'green',
         size: '10 inches',
-        wood: 'Yew Wood',
+        wood: 'Wood: Yew',
         core: 'Core: Leprechaun Hair',
         price: '£3,500'
     },
