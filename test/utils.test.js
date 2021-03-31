@@ -83,7 +83,7 @@ test('should return a table html', (expect) => {
 test('should return a total given a quantity and price', (expect) => {
     // Arrange
     // Set up your arguments and expectations
-    const expected = `<tr><td></td><td></td><td>$2007</td></tr>`;
+    const expected = `<tr><td></td><td></td><td>$1392</td></tr>`;
     
     // Act 
     // Call the function you're testing and set the result to a const

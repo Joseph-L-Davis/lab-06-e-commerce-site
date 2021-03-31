@@ -1,6 +1,6 @@
 export const cart = [
     {
-        id: 1,
+        id: 6,
         quantity: 3
     },
     {
