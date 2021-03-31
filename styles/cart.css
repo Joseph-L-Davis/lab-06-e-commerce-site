@@ -1,0 +1,29 @@
+body {
+  background-color: bisque;
+}
+
+table {
+  border: solid 1px black;
+}
+
+td {
+  border: dotted 1px black;
+}
+
+button {
+  background-color: burlywood;
+}
+
+.cart-header {
+  font-family: cursive;
+}
+
+.main-logo {
+  box-shadow: 2px 2px 10px 2px black;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,6 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { createWandLi } from '../utils.js';
+import { createWandLi, findById, calcItemTotal, createTableRow, createTotal } from '../utils.js';
+import { wands } from '../products.js';
+import { cart } from '../cart/cart-data.js';
+const cartThing = cart[0];
+const wandThing = wands[0];
 
 const test = QUnit.test;
 
@@ -25,4 +29,67 @@ test('time to test a function', (expect) => {
     // Expect
     // Make assertions about what is expected versus the actual result
     expect.equal(actual.outerHTML, expected);
+});
+
+test('should find and return an object based on its ID', (expect) => {
+    // Arrange
+    // Set up your arguments and expectations
+    const expected = 
+        {
+            id: 1,
+            wizard: 'Dumbledore',
+            image: '../assets/dumbledore.jpg',
+            color: 'cyan',
+            size: '15 inches',
+            wood: 'Wood: Elder',
+            core: 'Core: Thestral Tail Hair',
+            price: 300
+        };
+    
+    // Act 
+    // Call the function you're testing and set the result to a const
+    const actual = findById(wands, 1);
+    // Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
+
+test('should return a total given a quantity and price', (expect) => {
+    // Arrange
+    // Set up your arguments and expectations
+    const expected = `$24`;
+    
+    // Act 
+    // Call the function you're testing and set the result to a const
+    const actual = calcItemTotal(8, 3);
+    // Expect
+    // Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
+
+test('should return a table html', (expect) => {
+    // Arrange
+    // Set up your arguments and expectations
+    const expected = `<tr><td>Dumbledore</td><td>3</td><td>$900</td></tr>`;
+    
+    // Act 
+    // Call the function you're testing and set the result to a const
+    const actual = createTableRow(cartThing, wandThing);
+    // Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual.outerHTML, expected);
+});
+
+test('should return a total given a quantity and price', (expect) => {
+    // Arrange
+    // Set up your arguments and expectations
+    const expected = `<tr><td></td><td></td><td>$1392</td></tr>`;
+    
+    // Act 
+    // Call the function you're testing and set the result to a const
+    const actual = createTotal(cart, wands);
+    // Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual.outerHTML, expected);
+
 });
