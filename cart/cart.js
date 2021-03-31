@@ -7,8 +7,6 @@ const table = document.querySelector('table');
 for (let item of cart) {
     const matchingWand = findById(wands, item.id);
 
-    console.log(matchingWand, item);
-
     const tr = createTableRow(item, matchingWand);
 
     table.append(tr);

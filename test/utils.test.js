@@ -67,7 +67,7 @@ test('should return a total given a quantity and price', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('should return a table html', (expect) => {
+test('should return table HTML', (expect) => {
     // Arrange
     // Set up your arguments and expectations
     const expected = `<tr><td>Dumbledore</td><td>3</td><td>$900</td></tr>`;
@@ -80,7 +80,7 @@ test('should return a table html', (expect) => {
     expect.equal(actual.outerHTML, expected);
 });
 
-test('should return a total given a quantity and price', (expect) => {
+test('should return table HTML', (expect) => {
     // Arrange
     // Set up your arguments and expectations
     const expected = `<tr><td></td><td></td><td>$1392</td></tr>`;
