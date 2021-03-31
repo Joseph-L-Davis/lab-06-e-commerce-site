@@ -1,5 +1,6 @@
 export const wands = [
     {
+        id: 1,
         wizard: 'Dumbledore',
         image: '../assets/dumbledore.jpg',
         color: 'cyan',
@@ -10,6 +11,7 @@ export const wands = [
     },
 
     {
+        id: 2,
         wizard: 'Fleur',
         image: '../assets/fleur.jpg',
         color: 'blue',
@@ -20,6 +22,7 @@ export const wands = [
     },
 
     {
+        id: 3,
         wizard: 'Ginny',
         image: '../assets/ginny.jpg',
         color: 'green',
@@ -30,6 +33,7 @@ export const wands = [
     },
 
     {
+        id: 4,
         wizard: 'Harry',
         image: '../assets/harry.jpg',
         color: 'purple',
@@ -40,6 +44,7 @@ export const wands = [
     },
 
     {
+        id: 5,
         wizard: 'Hermione',
         image: '../assets/hermoine.jpg',
         color: 'yellow',
@@ -50,6 +55,7 @@ export const wands = [
     },
 
     {
+        id: 6,
         wizard: 'Lucius',
         image: '../assets/lucius.jpg',
         color: 'red',
@@ -60,6 +66,7 @@ export const wands = [
     },
 
     {
+        id: 7,
         wizard: 'McGonagall',
         image: '../assets/mcgonagall.jpg',
         color: 'cyan',
@@ -70,6 +77,7 @@ export const wands = [
     },
 
     {
+        id: 8,
         wizard: 'Neville',
         image: '../assets/neville.jpg',
         color: 'blue',
@@ -80,6 +88,7 @@ export const wands = [
     },
 
     {
+        id: 9,
         wizard: 'Voldemort',
         image: '../assets/voldemort.jpg',
         color: 'grey',
