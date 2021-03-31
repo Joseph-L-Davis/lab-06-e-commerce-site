@@ -46,6 +46,14 @@ export function findById(array, id) {
     }
 }
 
+export function calcItemTotal(quantity, price) {
+    let total = 0;
+    const value1 = Number(quantity);
+    const value2 = Number(price);
+    total = Number(value1) * Number(value2);
+    return total;
+}
+
 export function createTableRow(cartItem, wand) {
     // Create table row element
     const tr = document.createElement('tr');
