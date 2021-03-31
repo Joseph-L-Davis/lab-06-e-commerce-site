@@ -5,3 +5,7 @@ body {
 table {
   border: solid 1px black;
 }
+
+td {
+  border: dotted 1px black;
+}

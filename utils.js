@@ -37,3 +37,17 @@ export function createWandLi(wand) {
     return li;
   
 }
+
+export function findById(array, id) {
+    for (let obj of array) {
+        if (obj.id === id) {
+            return obj;
+        }
+    }
+}
+
+export function createTableRow(cartItem, wand) {
+    // Create table row element
+    const tr = document.createElement('tr');
+    
+}
