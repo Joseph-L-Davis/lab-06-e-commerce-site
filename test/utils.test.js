@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { createWandLi, findById, calcItemTotal, createTableRow } from '../utils.js';
+import { createWandLi, findById, calcItemTotal, createTableRow, createTotal } from '../utils.js';
 import { wands } from '../products.js';
 import { cart } from '../cart/cart-data.js';
 const cartThing = cart[0];
@@ -84,4 +84,22 @@ test('should return a total given a quantity and price', (expect) => {
     expect.equal(actual, expected);
     console.log(cartThing);
     console.log(wandThing);
+});
+
+test('should return a total given a quantity and price', (expect) => {
+    // Arrange
+    // Set up your arguments and expectations
+    const expected = `<tr>
+                    <td>Dumbledore</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>`;
+    
+    // Act 
+    // Call the function you're testing and set the result to a const
+    const actual = createTotal(cart, wands);
+    // Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+
 });

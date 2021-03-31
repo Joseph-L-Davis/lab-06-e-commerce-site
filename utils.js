@@ -74,5 +74,25 @@ export function createTableRow(cartItem, wand) {
 }
 
 export function createTotal(cart, wands) {
-    
+    let sum = 0;
+
+    for (let item of cart) {
+        const matchingWand = findById(wands, item.id);
+
+        const lineItem = matchingWand * item.quantity;
+
+        sum = sum + lineItem;
+    }
+
+    const tr = document.createElement('tr');
+
+    const td1 = document.createElement('td');
+    const td2 = document.createElement('td');
+    const td3 = document.createElement('td');
+
+    td3.textContent = `$${sum}`;
+
+    tr.append(td1, td2, td3);
+
+    return tr;
 }
