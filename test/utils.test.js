@@ -43,7 +43,7 @@ test('should find and return an object based on its ID', (expect) => {
             size: '15 inches',
             wood: 'Wood: Elder',
             core: 'Core: Thestral Tail Hair',
-            price: 3
+            price: 300
         };
     
     // Act 
@@ -57,7 +57,7 @@ test('should find and return an object based on its ID', (expect) => {
 test('should return a total given a quantity and price', (expect) => {
     // Arrange
     // Set up your arguments and expectations
-    const expected = 24;
+    const expected = `$24`;
     
     // Act 
     // Call the function you're testing and set the result to a const
@@ -67,39 +67,29 @@ test('should return a total given a quantity and price', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-test('should return a total given a quantity and price', (expect) => {
+test('should return a table html', (expect) => {
     // Arrange
     // Set up your arguments and expectations
-    const expected = `<tr>
-                    <td>Dumbledore</td>
-                    <td>3</td>
-                    <td>3</td>
-                </tr>`;
+    const expected = `<tr><td>Dumbledore</td><td>3</td><td>$900</td></tr>`;
     
     // Act 
     // Call the function you're testing and set the result to a const
     const actual = createTableRow(cartThing, wandThing);
     // Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
-    console.log(cartThing);
-    console.log(wandThing);
+    expect.equal(actual.outerHTML, expected);
 });
 
 test('should return a total given a quantity and price', (expect) => {
     // Arrange
     // Set up your arguments and expectations
-    const expected = `<tr>
-                    <td>Dumbledore</td>
-                    <td>3</td>
-                    <td>3</td>
-                </tr>`;
+    const expected = `<tr><td></td><td></td><td>$2007</td></tr>`;
     
     // Act 
     // Call the function you're testing and set the result to a const
     const actual = createTotal(cart, wands);
     // Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(actual.outerHTML, expected);
 
 });

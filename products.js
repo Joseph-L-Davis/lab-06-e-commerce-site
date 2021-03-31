@@ -7,7 +7,7 @@ export const wands = [
         size: '15 inches',
         wood: 'Wood: Elder',
         core: 'Core: Thestral Tail Hair',
-        price: 3
+        price: 300
     },
 
     {
@@ -18,7 +18,7 @@ export const wands = [
         size: '9.5 inches',
         wood: 'Wood: Rosewood',
         core: 'Core: Veela Hair',
-        price: '£3,000'
+        price: 35
     },
 
     {
@@ -29,7 +29,7 @@ export const wands = [
         size: '10 inches',
         wood: 'Wood: Yew',
         core: 'Core: Leprechaun Hair',
-        price: '£3,500'
+        price: 21
     },
 
     {
@@ -40,7 +40,7 @@ export const wands = [
         size: '11 inches',
         wood: 'Wood: Holly',
         core: 'Core: Phoenix Feather',
-        price: '£150,000'
+        price: 190
     },
 
     {
@@ -51,7 +51,7 @@ export const wands = [
         size: '10.75 inches',
         wood: 'Wood: Vine',
         core: 'Core: Dragon Heartstring',
-        price: '£80,000'
+        price: 80
     },
 
     {
@@ -62,7 +62,7 @@ export const wands = [
         size: '18 inches',
         wood: 'Wood: Elm',
         core: 'Core: Dragon Heartstring',
-        price: '£92,000'
+        price: 95
     },
 
     {
@@ -73,7 +73,7 @@ export const wands = [
         size: '9.5 inches',
         wood: 'Wood: Fir',
         core: 'Core: Dragon Heartstring',
-        price: '£105,000'
+        price: 105
     },
 
     {
@@ -84,7 +84,7 @@ export const wands = [
         size: '13 inches',
         wood: 'Wood: Cherry',
         core: 'Core: Unicorn Hair',
-        price: '£65,000'
+        price: 16
     },
 
     {
@@ -95,7 +95,7 @@ export const wands = [
         size: '13.5 inches',
         wood: 'Wood: Yew',
         core: 'Core: Phoenix Feather',
-        price: '£240,000'
+        price: 240
     },
     
 ];

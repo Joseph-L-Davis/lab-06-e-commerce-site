@@ -79,7 +79,7 @@ export function createTotal(cart, wands) {
     for (let item of cart) {
         const matchingWand = findById(wands, item.id);
 
-        const lineItem = matchingWand * item.quantity;
+        const lineItem = matchingWand.price * item.quantity;
 
         sum = sum + lineItem;
     }
