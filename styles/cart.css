@@ -1,4 +1,4 @@
-body {
+.cart {
   background-color: bisque;
 }
 
@@ -22,7 +22,7 @@ button {
   box-shadow: 2px 2px 10px 2px black;
 }
 
-section {
+.main-section {
   display: flex;
   align-items: center;
   justify-content: center;
