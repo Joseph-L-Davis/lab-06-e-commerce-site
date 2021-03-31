@@ -7,34 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
 </head>
 
 <body>
+
     <header>
         <div class="gutter-right logo">
-            <img src="../assets/big-logo.png"/>
+            <img src="../assets/wand-shop.jpg"/>
         </div>
     </header>
-    <main>
-        <section class="main-section">
-            <img class="main-logo" src="../assets/wand-shop.jpg"/>
-          <p>
-              <h2> <a href="./cart"> Click Here To View Your Cart</a></h2>
-            <ul class='products' id='products'>
-                
-            </ul>
-          </p>
 
+    <section class="main-section">
+            <h2>
+                Welcome to the Cart page!
+            </h2>
+
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </thead>
+            </table>
+            <button>Submit order</button>
         </section>
-    </main>
+    
     <footer>
         <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
     </footer>
 
-    <script type="module" src="products.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>
