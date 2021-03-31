@@ -1,7 +1,10 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { createWandLi, findById, calcItemTotal } from '../utils.js';
+import { createWandLi, findById, calcItemTotal, createTableRow } from '../utils.js';
 import { wands } from '../products.js';
+import { cart } from '../cart/cart-data.js';
+const cartThing = cart[0];
+const wandThing = wands[0];
 
 const test = QUnit.test;
 
@@ -40,7 +43,7 @@ test('should find and return an object based on its ID', (expect) => {
             size: '15 inches',
             wood: 'Wood: Elder',
             core: 'Core: Thestral Tail Hair',
-            price: '£300,000'
+            price: 3
         };
     
     // Act 
@@ -62,4 +65,23 @@ test('should return a total given a quantity and price', (expect) => {
     // Expect
     // Make assertions about what is expected versus the actual result
     expect.deepEqual(actual, expected);
+});
+
+test('should return a total given a quantity and price', (expect) => {
+    // Arrange
+    // Set up your arguments and expectations
+    const expected = `<tr>
+                    <td>Dumbledore</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>`;
+    
+    // Act 
+    // Call the function you're testing and set the result to a const
+    const actual = createTableRow(cartThing, wandThing);
+    // Expect
+    // Make assertions about what is expected versus the actual result
+    expect.equal(actual, expected);
+    console.log(cartThing);
+    console.log(wandThing);
 });

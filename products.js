@@ -7,7 +7,7 @@ export const wands = [
         size: '15 inches',
         wood: 'Wood: Elder',
         core: 'Core: Thestral Tail Hair',
-        price: '£300,000'
+        price: 3
     },
 
     {

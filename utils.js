@@ -48,14 +48,31 @@ export function findById(array, id) {
 
 export function calcItemTotal(quantity, price) {
     let total = 0;
-    const value1 = Number(quantity);
-    const value2 = Number(price);
-    total = Number(value1) * Number(value2);
-    return total;
+    // const value1 = Number(quantity);
+    // const value2 = Number(price);
+    total = quantity * price;
+    return `$${total}`;
 }
 
 export function createTableRow(cartItem, wand) {
     // Create table row element
     const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    const tdQuantity = document.createElement('td');
+    const tdPrice = document.createElement('td');
+    const priceValue = calcItemTotal(cartItem.quantity, wand.price);
+
+    tdName.textContent = wand.wizard;
+
+    tdQuantity.textContent = cartItem.quantity;
+
+    tdPrice.textContent = priceValue;
+
+    tr.append(tdName, tdQuantity, tdPrice);
+
+    return tr;
+}
+
+export function createTotal(cart, wands) {
     
 }
