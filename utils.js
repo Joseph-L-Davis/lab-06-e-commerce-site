@@ -1,3 +1,5 @@
+import { addItem } from './local-storage-utils.js';
+
 export function createWandLi(wand) {
     const li = document.createElement('li');
 
@@ -31,6 +33,10 @@ export function createWandLi(wand) {
 
     const button = document.createElement('button');
     button.textContent = 'Add To Cart';
+
+    button.addEventListener('click', () => {
+        addItem(wand.id);
+    });
 
     li.append(pWizard, image, pLength, pWood, pCore, pPrice, button);
 
