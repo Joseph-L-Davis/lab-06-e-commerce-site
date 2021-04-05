@@ -1,6 +1,8 @@
 import { wands } from '../products.js';
-import { cart } from '../cart/cart-data.js';
+import { getCart } from '../local-storage-utils.js';
 import { createTableRow, createTotal, findById } from '../utils.js';
+
+const cart = getCart();
 
 const table = document.querySelector('table');
 

@@ -1,12 +1,13 @@
 import { findById } from './utils.js';
 
+// Use a const to insure that we get this right anytime its used, magic string
 const CART = 'CART';
 
 // A function to create a cart if one doesn't exist
 export function getCart() {
     const stringCart = localStorage.getItem(CART);
     const parsedCart = JSON.parse(stringCart);
-
+  // If cart is empty return empty cart
     if (parsedCart) {
         return parsedCart;
     } else {
